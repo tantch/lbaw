@@ -27,12 +27,12 @@
       {include file='common/navbar_logged_out.tpl'}
     {/if}
   </header>
-  <div id="error_messages">
+  <div id="error_messages" class="state">
   {foreach $ERROR_MESSAGES as $error}
     <div class="error">{$error}<a class="close" href="#">X</a></div>
   {/foreach}
   </div>
-  <div id="success_messages">
+  <div id="success_messages" class="state">
   {foreach $SUCCESS_MESSAGES as $success}
     <div class="success">{$success}<a class="close" href="#">X</a></div>
   {/foreach}

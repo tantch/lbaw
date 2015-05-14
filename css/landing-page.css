@@ -400,6 +400,9 @@ padding-top: 35px;
   color: #fcfcfc;
 }
 
+.state {
+  padding-top: 50px;
+}
 @media (max-width: 400px) {
   .panel-menu a.account {
     padding: 5px 0px 5px 0;

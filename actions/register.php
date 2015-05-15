@@ -3,6 +3,14 @@
 
 include_once ('../config/init.php');
 include_once ($BASE_DIR . '/database/db_util.php');
+
+if ($_SESSION['user_id']) {
+    $_SESSION['error_messages'][] = 'already logged in';
+    header("Location: $BASE_URL");
+    exit;
+  }
+
+
 $error=0;
 function checkparams(){
   global $error;

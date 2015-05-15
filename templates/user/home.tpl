@@ -1,5 +1,7 @@
 {include file='common/header.tpl'}
 
+<script src="../../javascript/login_vale.js"></script>
+
 <a name="login" ></a>
 <div class="intro-header">
   <div class="container">
@@ -10,15 +12,15 @@
           <div class="panel-body">
             <h1 class="text-center">Login</h1>
           </div>
-          <form class="form col-md-12 center-block" method="post" action="../../actions/login.php" enctype="multipart/form-data" >
+          <form class="form col-md-12 center-block" method="post" action="../../actions/login.php" enctype="multipart/form-data" name="form" >
             <div class="form-group">
-              <input type="text" class="form-control input-lg" placeholder="Username" name="inpt_username">
+              <input type="text" class="form-control input-lg" placeholder="Username" name="inpt_username" id="inpt_username" required>
             </div>
             <div class="form-group">
-              <input type="password" class="form-control input-lg" placeholder="Password" name="inpt_pass">
+              <input type="password" class="form-control input-lg" placeholder="Password" name="inpt_pass" id="inpt_pass" required>
             </div>
             <div class="form-group">
-              <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In</button>
+              <button class="btn btn-primary btn-lg btn-block" type="submit" onClick="return validate();">Sign In</button>
               <span class="pull-right"><a href="register.php">Registar</a></span>
               <span class="pull-left"><a href="#faq">Need help?</a></span>
             </div>

@@ -1,5 +1,7 @@
 {include file='common/header.tpl'}
 
+<script src="../../javascript/register_vale.js"></script>
+
 <a name="registar"></a>
 <div class="intro-header">
   <div class="container">
@@ -14,32 +16,32 @@
 
                   <div class="form-group col-lg-12">
                     <label>Username</label>
-                    <input type="" name="username" class="form-control" id="" value="">
+                    <input type="" name="username" class="form-control" id="username" value="" required>
                   </div>
 
                   <div class="form-group col-lg-12">
                     <label>Full Name</label>
-                    <input type="" name="name" class="form-control" id="" value="">
+                    <input type="" name="name" class="form-control" id="name" value="" required>
                   </div>
 
                   <div class="form-group col-lg-6">
                     <label>Password</label>
-                    <input type="password" name="password" class="form-control" id="" value="">
+                    <input type="password" name="password" class="form-control" id="pass" value="" required>
                   </div>
 
                   <div class="form-group col-lg-6">
                     <label>Repetir Password</label>
-                    <input type="password" name="rpassword" class="form-control" id="" value="">
+                    <input type="password" name="rpassword" class="form-control" id="cpass" value="" required>
                   </div>
 
                   <div class="form-group col-lg-6">
                     <label>Endereço de Email</label>
-                    <input type="email" name="email" class="form-control" id="" value="">
+                    <input type="email" name="email" class="form-control" id="email" value="" required>
                   </div>
 
                   <div class="form-group col-lg-6">
                     <label>Repetir Endereço de Email</label>
-                    <input type="email" name="remail" class="form-control" id="" value="">
+                    <input type="email" name="remail" class="form-control" id="cemail" value="" required>
                   </div>
 
                 </div>
@@ -51,7 +53,7 @@
                     <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
                     <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
                   </ul>
-                  <button type="submit" class="btn btn-primary">Registar</button>
+                  <button type="submit" class="btn btn-primary" OnClick="return validate(this);">Registar</button>
                 </form>
               </div>
             </div>

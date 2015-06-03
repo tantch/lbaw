@@ -3,9 +3,11 @@
   session_start();
 
   error_reporting(E_ERROR | E_WARNING); // E_NOTICE by default
+  @ini_set('display_errors', 'on');
+  define('_PS_DEBUG_SQL_', true);
 
-  $BASE_DIR = '/usr/users2/mieic2012/ei12037/public_html/proto/';
-  $BASE_URL = '/~ei12037/proto/';
+  $BASE_DIR = '/usr/users2/mieic2012/ei12037/public_html/LBAW/proto/';
+  $BASE_URL = '/~ei12037/LBAW/proto/';
 
   $conn = new PDO('pgsql:host=vdbm;dbname=lbaw1415', 'lbaw1415', 'developes'); //FIXME
   $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -14,6 +16,7 @@
   $conn->exec('SET SCHEMA \'public\''); //FIXME
 
   include_once($BASE_DIR . 'lib/smarty/Smarty.class.php');
+  include_once($BASE_DIR . 'database/db_util.php');
 
   $smarty = new Smarty;
   $smarty->template_dir = $BASE_DIR . 'templates/';
@@ -26,9 +29,11 @@
   $smarty->assign('FORM_VALUES', $_SESSION['form_values']);
   $smarty->assign('USERNAME', $_SESSION['username']);
   $smarty->assign('USERID',$_SESSION['user_id']);
+  $smarty->assign('USERPIC',fetchProfilePic($_SESSION['user_id']));
 
   unset($_SESSION['success_messages']);
   unset($_SESSION['error_messages']);
   unset($_SESSION['field_errors']);
   unset($_SESSION['form_values']);
+  
 ?>

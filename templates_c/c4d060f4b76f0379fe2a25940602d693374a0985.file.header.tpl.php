@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2015-05-14 18:10:27
+<?php /* Smarty version Smarty-3.1.15, created on 2015-05-29 11:56:45
          compiled from "/usr/users2/mieic2012/ei12037/public_html/proto/templates/common/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19342912495550ccb0b95d45-07567915%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c4d060f4b76f0379fe2a25940602d693374a0985' => 
     array (
       0 => '/usr/users2/mieic2012/ei12037/public_html/proto/templates/common/header.tpl',
-      1 => 1431619804,
+      1 => 1432893264,
       2 => 'file',
     ),
   ),
@@ -44,6 +44,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 css/landing-page.css" rel="stylesheet">
+    <link href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/fileinput.css" rel="stylesheet">
+    <link href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/fileinput.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>

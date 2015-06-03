@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2015-05-14 18:09:28
+<?php /* Smarty version Smarty-3.1.15, created on 2015-05-29 11:34:05
          compiled from "/usr/users2/mieic2012/ei12037/public_html/proto/templates/user/visaopessoal.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:8300263835550ccbcdbc7e4-74711041%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fd6bd489db80bdf1b846e64f8ab9c91074a13ff7' => 
     array (
       0 => '/usr/users2/mieic2012/ei12037/public_html/proto/templates/user/visaopessoal.tpl',
-      1 => 1431619634,
+      1 => 1432892041,
       2 => 'file',
     ),
   ),
@@ -87,6 +87,19 @@ $_smarty_tpl->tpl_vars['proj']->_loop = true;
                 </table>
                 <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 pages/user/novoprojeto.php"> Novo Projeto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="span9">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/user/editarperfil.php"> Editar Perfil </a>
+                </div>
               </div>
             </div>
           </div>
